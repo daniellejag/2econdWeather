@@ -1,0 +1,147 @@
+body {
+    font-family: arial, sans-serif;
+background: #161B22;
+
+}
+
+h1 {
+    color: #e9e5e5;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(135, 135, 135);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+}
+
+a { 
+  text-decoration: none;
+}
+
+li:first-letter {
+    text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.weather-app {
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+    background: #0D1117;
+}
+
+.overview {
+    margin-bottom: 20px;
+}
+
+.weather-temperature img {
+   margin-top: -45px;
+  
+}
+
+.weather-temperature strong {color: #f0f4f8;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
+
+.weather-temperature .active {
+color: #f0f4f8;
+text-decoration: none;;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
+ul.weekday-ul {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 8px;
+}
+
+li.mon {
+line-height: 3em 2em;
+ float: left;
+ display: block;
+ text-align: center;
+padding-left: -25px;
+
+text-align: center;
+margin: 5px 10px;
+}
+
+.mon:hover {
+color: #215ED7;
+background: #161C23;
+transition: all 200ms ease-in-out;
+cursor: pointer;
+}
+
+.h-m {
+color: #40C364;
+}
+
+.name {
+color: rgb(135, 135, 135);
+}
+
+.form-control {
+background-color: #090D10;
+border: 1px solid #30363d;
+
+}
+
+
+.form-control:focus {
+background: #161C23;
+color: #C9D1D9;
+border: 1px solid #30363d;
+
+}
+
+
+#current-city-btn {
+    font-size: 15px;
+    border: transparent;
+    background: transparent;
+    color: rgb(218, 44, 44);
+  position: justify;
+  margin: -17px;
+
+    
+}
+
+#current-city-btn:hover {
+    color: whitesmoke;
+    transition: all 200ms ease-in-out;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+   
+}
