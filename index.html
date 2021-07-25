@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+     <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+
+					<div class="row">
+          <div class="overview col-8">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+<div class="col-4"><a href="#" id="current-city-btn">Check Your Current City</a>
+				</div>
+			
+
+          <div class="row">
+            <div class="col-8">
+              <div class="clearfix weather-temperature">
+               
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+									 <img src="" alt="Clear" id="icon" class="float-left" />
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul>
+                <li class=h-m>Humidity: <span id="humidity"></span>%</li>
+                <li class=h-m>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+
+						
+						<ul class="weekday-ul">
+							
+  <li class="mon">
+    Mon ☁︎ 26º ⎮
+  </li>
+	<li class="mon">
+	Tue ☂︎ 27º ⎮
+	</li>
+	<li class="mon">
+	Wed ☀︎ 28º ⎮
+	</li>
+	<li class="mon">
+		Thu ☀︎ 25º ⎮
+	</li>
+	<li class="mon">
+		Fri ☁︎ 26º
+	</li>
+</ul>
+</div>
+
+        </div>
+
+			</div>
+
+
+
+
+
+
+
+        <small>
+          <a
+            href=#
+            target="_blank"
+            >Open-source code</a
+          > <span class="name">
+          by Danielle Jagendorf
+					<span>
+        </small>
+      </div>
+    </div>
+    <script src="src/src.js"></script>
+  </body>
+</html>
