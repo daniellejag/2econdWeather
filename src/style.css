@@ -33,8 +33,24 @@ a {
 
 .weather-forecast {
   color: white;
+  margin-top: 20px;
+  text-align: center;
+  display:inline;
 }
 
+.weather-forecast-date {
+  font-size: 16px;
+  color: white;
+  opacity: 0.8;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature {
+  font-size: 16px;
+}
 
 .weather-app-wrapper {
     max-width: 600px;
@@ -79,30 +95,7 @@ text-decoration: none;;
     text-decoration: none;
 }
 
-ul.weekday-ul {
-  list-style-type: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 8px;
-}
 
-li.mon {
-line-height: 3em 2em;
- float: left;
- display: block;
- text-align: center;
-padding-left: -25px;
-
-text-align: center;
-margin: 5px 10px;
-}
-
-.mon:hover {
-color: #215ED7;
-background: #161C23;
-transition: all 200ms ease-in-out;
-cursor: pointer;
-}
 
 .h-m {
 color: #40C364;
