@@ -57,8 +57,6 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-
-
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -83,9 +81,7 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
  
   getForecast(response.data.coord);
-
 }
-
 
 function search(city) {
   let apiKey = "b3a8312e8813d91f8ac0edd65adaa9c3";
