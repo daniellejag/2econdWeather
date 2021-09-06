@@ -31,9 +31,10 @@ a {
   text-decoration: none;
 }
 
-li:first-letter {
-    text-transform: capitalize;
+.weather-forecast {
+  color: white;
 }
+
 
 .weather-app-wrapper {
     max-width: 600px;
