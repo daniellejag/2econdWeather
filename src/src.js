@@ -156,6 +156,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.style.color ='grey';
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
