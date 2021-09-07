@@ -1,20 +1,32 @@
 body {
     font-family: arial, sans-serif;
-background: #161B22;
+    text-align: center;
+
+
 
 }
 
 h1 {
     color: #e9e5e5;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 58px;
     margin-bottom: 0;
+    text-align: center;
+  
+}
+
+h3 {
+ text-align: center;
+
 }
 
 ul {
-    margin: 0;
+    
     padding: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 li {
@@ -24,85 +36,119 @@ li {
     color: rgb(135, 135, 135);
     font-size: 16px;
     font-weight: 100;
-    line-height: 19px;
+    text-align: center;
+  
 }
 
 a { 
   text-decoration: none;
 }
 
+h4 {
+ margin: 10px;
+ line-height: 25px;
+}
+
+
 .weather-forecast {
   color: white;
-  margin-top: 20px;
+  padding: 20px;
   text-align: center;
-  display:inline;
+
 }
 
 .weather-forecast-date {
   font-size: 16px;
   color: white;
   opacity: 0.8;
+  text-align: center;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  text-align: center;
 }
 
 .weather-forecast-temperature {
   font-size: 16px;
+  text-align: center
 }
 
 .weather-app-wrapper {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 60px auto;
+    text-align: center;
+   
 }
 
 .weather-app {
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 5px;
-    background: #0D1117;
+    background : #161B22;
+    text-align: center;
+
+
 }
 
 .overview {
     margin-bottom: 20px;
 }
 
-.weather-temperature img {
-   margin-top: -45px;
-  
+img {
+ display: block;
+ margin: 0 auto;
 }
 
-.weather-temperature strong {color: #f0f4f8;
+.weather-temperature img {
+   margin-top: -30px;
+    
+}
+
+
+#temperature {
+ position: relative;
+ left: 30px;
+}
+
+
+
+.weather-temperature strong {
+ color: #f0f4f8;
     font-size: 64px;
     line-height: 1;
     font-weight: 400;
+    text-align: center;
+    margin: 30px;
+   
 }
 
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
     top: -34px;
+    text-align: center;
+
 }
 
-.weather-temperature .active {
+.units .active {
 color: #f0f4f8;
-text-decoration: none;;
-    cursor: default;
+text-decoration: none;
+cursor: default;
 }
 
-.weather-temperature .active:hover {
-    text-decoration: none;
+.units .active:hover {
+text-decoration: none;
+color : #f0f4f8;
 }
 
 
 
-.h-m {
-color: #40C364;
-}
+
 
 .name {
 color: rgb(135, 135, 135);
+
 }
 
 .form-control {
@@ -125,10 +171,8 @@ border: 1px solid #30363d;
     border: transparent;
     background: transparent;
     color: rgb(218, 44, 44);
-  position: justify;
-  margin: -17px;
-
-    
+    text-align: center;
+   
 }
 
 #current-city-btn:hover {
@@ -139,3 +183,4 @@ border: 1px solid #30363d;
     text-decoration: none;
    
 }
+
