@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+   
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
    
     <link rel="stylesheet" href="src/style.css" />
@@ -41,34 +42,51 @@
           </form>
 <div class="row"><a href="#" id="current-city-btn">Check Your Current City</a>
 				</div>
+        
+       
 					<div class="row">
-         
+      
             <h1 id="city"></h1>
-            <h2> 	 <img src="" alt="Clear" id="icon"/> </h2>
-     
-              <div class="row">
+      
+             <div class="lastupdated">Last updated: <span id="date"></span></div>
+             <div class=earth> </div>
+      </br>
+       
+       
           
+
+            
+      
               <div class="weather-temperature">
-               
                 
-                 <h3> <strong id="temperature"></strong> 
+                
+                 <h2> <strong id="temperature"></strong> 
                   <span class="units">
                     <a href="#" id="fahrenheit-link" class="active">°F</a> |
                     <a href="#" id="celsius-link">°C</a></span
                   >
-                  
+                  <img src="" alt="Clear" id="icon" width="115"/> 
                 </h3>
-	
-                
+            
+          
              
             </div>
          <h4>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
+              <div class="row">
+              <div class="col-4">
               
+              <li id="description"></li>
+            </div>
+              <div class="col-4">
                  <li>Humidity: <span id="humidity"></span>%</li>
+              </div>
+                  <div class="col-4">
                 <li>Wind: <span id="wind"></span> mph</li>
+                  
+                  
+              </div>
+            </div>
               </ul>
            
           </div>
@@ -85,7 +103,7 @@
           by Danielle Jagendorf
 					<span>
         </small>
-      
+     
       </div>
     </div>
     <script src="src/src.js"></script>
