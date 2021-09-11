@@ -179,12 +179,7 @@ margin: 0 auto;
 transform: translste(-50%, -50%);
 width: 200px;
 height: 200px;
-background : url('https://earthobservatory.nasa.gov/ContentFeature/BlueMarble/Images/land_shallow_topo_350.jpg');
-
-
-
-
-
+background-image : url('https://earthobservatory.nasa.gov/ContentFeature/BlueMarble/Images/land_shallow_topo_350.jpg');
 background-size: cover;
 background-repeat: repeat-x;
 border-radius: 50%;
