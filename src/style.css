@@ -86,24 +86,29 @@ text-align: center;
 }
 
 .weather-temperature img {
- margin-top: -30px;  
+ margin-top: -32px; 
+ margin-right: -20px; 
 }
 
 
 #temperature {
- font-size: 90px;
+ margin-left: -20px; 
+ font-size: 70px;
+
 }
 
 .weather-temperature strong {
   color: #f0f4f8;
   font-size: 64px;
   font-weight: 400;
+  margin-top: -29px; 
+ 
 }
 
 .weather-temperature .units {
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
-  top: -50px;
+  top: -40px;
 }
 
 .units .active {
@@ -170,8 +175,9 @@ border : 1px solid rgba(34, 34, 34, 0.573);
 
 .lastupdated,
 #date {
-line-height: 43px;
+line-height: 33px;
 color: whitesmoke;
+margin-bottom: 30px;
 }
 
 
