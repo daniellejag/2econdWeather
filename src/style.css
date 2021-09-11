@@ -22,19 +22,19 @@ text-align: center;
 
 li {
 list-style: none;
-color: rgb(135, 135, 135);
+color: rgb(78, 159, 230);
 font-size: 16px;
 text-align: center;
 }
 
 ul li {
 border:1px solid rgba(31, 31, 31 0.6);
-background-color: rgba(48, 45, 45, 0.4);
-box-shadow :3px 10px 20px rgba(14, 3, 24, 0.2);
-border-radius : 20px;
+background-color: rgba(46, 48, 52, 0.742);
+box-shadow : 3px 10px 20px rgba(14, 3, 24, 0.2);
+border-radius : 10px;
 padding: 6px;
+margin-top: -24px;
 }
-
 
 a { 
   text-decoration: none;
@@ -79,17 +79,21 @@ text-align: center;
 }
 
 .weather-app {
+margin-top: 20px;
 padding: 18px;
-border: 5px solid #00000092;
+border: transparent;
 border-radius: 5px;
 background : #161B22;
 text-align: center;
+box-shadow: -5px 11px 11px rgba(0, 0, 0, 0.2);
 }
 
 .weather-temperature img {
  margin-top: -32px; 
  display: inline;
  text-align: center;
+ margin-bottom: 5px;
+ margin-right: -15px;
 }
 
 
@@ -132,6 +136,7 @@ color: rgb(135, 135, 135);
 .form-control {
 background-color: #090D10;
 border: 1px solid #30363d;
+box-shadow: inset -5px 11px 11px rgba(0, 0, 0, 0.2);
 }
 
 .form-control:focus {
@@ -179,8 +184,10 @@ border : 1px solid rgba(34, 34, 34, 0.573);
 .lastupdated,
 #date {
 line-height: 33px;
-color: whitesmoke;
+color: #64666f;
+font-weight: 500;
 margin-bottom: 30px;
+font-size: 20px;
 }
 
 
