@@ -32,6 +32,7 @@ border:1px solid rgba(31, 31, 31 0.6);
 background-color: rgba(48, 45, 45, 0.4);
 box-shadow :3px 10px 20px rgba(14, 3, 24, 0.2);
 border-radius : 20px;
+padding: 6px;
 }
 
 
@@ -87,13 +88,14 @@ text-align: center;
 
 .weather-temperature img {
  margin-top: -32px; 
- margin-right: -20px; 
+ display: inline;
+ text-align: center;
 }
 
 
 #temperature {
- margin-left: -20px; 
  font-size: 70px;
+ text-align: center;
 
 }
 
@@ -109,6 +111,7 @@ text-align: center;
   font-size: 17px;
   position: relative;
   top: -40px;
+  
 }
 
 .units .active {
