@@ -3,11 +3,6 @@ font-family : Arial,Verdana,sans-serif;
 font-weight: 400;
 text-align: center;
 background : url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2104&q=80');
-
-
-
-
-
 align-items: center;
 }
 
@@ -92,11 +87,11 @@ text-align: center;
 margin-top: 20px;
 padding: 18px;
 border: transparent;
-border-radius: 5px;
+border-radius: 8px;
 background : rgba(15, 17, 18, 0.9);
-backdrop-filter: blur(20px);
+backdrop-filter: blur(3px);
 text-align: center;
-box-shadow: -5px 11px 11px rgba(0, 0, 0, 0.2);
+box-shadow: -5px 11px 11px rgba(0, 0, 0, 0.9);
 }
 
 .weather-temperature img {
