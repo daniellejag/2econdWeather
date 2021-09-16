@@ -43,59 +43,75 @@
           </form>
 <div class="row"><a href="#" id="current-city-btn">Check Your Current City</a>
 				</div>
-        
-       <span id="planet"> </span>
+                      
+    
 					<div class="row">
       
-            <h1 id="city"></h1>
+         
       
-             <div class="lastupdated"> <span id="date"></span></div>
-             <div class=earth>  </div>
-          </br>
-        
+ 
       
-      
-              <div class="weather-temperature">
-              
-                <div class="row">
-                 <h2> <strong id="temperature"></strong> 
-                  <span class="units">
+   <div class=container>     
+   <h1 id="city"></h1>
+<div class="row">
+  <div class="col-sm-7">
+
+      <div class="card mb-3 bg-transparent" style="max-width: 18rem;">
+ 
+  <div class="card-body">
+    <h5 class="card-title">  <img src="" alt="Clear" id="icon" width="90"/><strong id="temperature"></strong> 
+ 
+      <strong id="temperature"></strong> 
+      <div class="weather-temperature">
+         <span class="units">
                     <a href="#" id="fahrenheit-link" class="active">°F</a> |
-                    <a href="#" id="celsius-link">°C</a></span
-                  >
-                
-                <span>  <img src="" alt="Clear" id="icon" width="140"/> </span>
-                  </div>
-            
+                    <a href="#" id="celsius-link">°C</a></span>
+                  </div> 
              
-             
-            </div>
-         <h4>
-           <div class="container-fluid">
-    <div class="row justify-content-center">
-            <ul>
-              <div class="row">
-              <div class="col-4">
-              
-              <li id="description"></li>
-            </div>
-              <div class="col-4">
-                 <li>Humidity: <span id="humidity"></span>%</li>
-              </div>
-                  <div class="col-4">
-                <li>Wind: <span id="wind"></span> mph</li>
-                  </div>
-            </div>
-                  
-              </div>
-            </div>
-              </ul>
+                </h5>
+  
+  </div>
+
+</div>
+ 
+</div>
+
+
+ 
+  <div class="col-sm-4">
+ <div class="container bg-transparent"> 
+      <div class="card bg-transparent" style="width: 14rem;">
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="card-header"></div>
+      <span class="lastupdated"> 
+               <span id="date">
+               </span>
+             </span>
+            </li>
            
+      <li class="list-group-item">   <span id="description"></span>
+    <li class="list-group-item">Wind: <span id="wind"></span> mph</span>
+    <li class="list-group-item">Humidity: <span id="humidity"></span>%</li>
+  </ul>
+</div>
+
+</div>
+</div>  
+  <div class=earth>  </div>  
+ 
+</div>        
+       
           </div>
+        
         </h4>
         <div class="weather-forecast" id="forecast"></div>
+        
         </div>
-        </div> 
+      
+      </div>
+     <footer>
+    
         <small>
           <a
             href="https://github.com/daniellejag/2econdWeather"
@@ -105,7 +121,8 @@
           by Danielle Jagendorf
 					<span>
         </small>
-     
+      </footer>
+    </br>
       </div>
     </div>
     <script src="src/src.js"></script>

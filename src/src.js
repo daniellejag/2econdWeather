@@ -73,8 +73,8 @@ forecastHTML = forecastHTML +
               width="50"
               />
               <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> High ${Math.round(forecastDay.temp.max)}º </span>
-                <span class="weather-forecast-temperature-min"> Low ${Math.round(forecastDay.temp.min)}º </span>
+                <span class="weather-forecast-temperature-max">  ${Math.round(forecastDay.temp.max)}º </span>
+                <span class="weather-forecast-temperature-min">  ${Math.round(forecastDay.temp.min)}º </span>
               </div>
                 </div>
                 
@@ -173,16 +173,19 @@ function showTemperature(response) {
   let currentCity = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
  
-  currentCity.innerHTML = response.data.name;
+  currentCity.innerHTML = ("earth")+response.data.name
+
+
   temperatureElement.innerHTML = temperature;
 }
 
 
-
 let fahrenheitTemperature = null;
+
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.style.color ='grey';
