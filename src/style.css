@@ -58,7 +58,7 @@ margin-top: 29px;
 margin-bottom: -3px;
 text-align: center;
 border : 1px solid rgba(31, 31, 31 0.6);
-background-color: rgba(48, 45, 45, 0.4);
+
 box-shadow : 3px 10px 20px rgba(14, 3, 24, 0.2);
 border-radius: 5px;
 font-family: 'DINBold',Arial,Verdana,sans-serif;
@@ -73,6 +73,7 @@ font-size: 17px;
 color: white;
 opacity: 0.8;
 text-transform: uppercase; 
+font-weight: 500;
 }
 
 .weather-forecast-temperature-min {
@@ -81,6 +82,7 @@ opacity: 0.5;
 
 .weather-forecast-temperature {
 font-size: 16px;
+font-weight: 400;
 }
 
 .weather-app-wrapper {
@@ -90,6 +92,7 @@ margin: 0 auto;
 display: block;
 text-align: center;
 margin-bottom: 20px;
+
 
 }
 
@@ -107,8 +110,9 @@ box-shadow: -5px 11px 11px rgba(0, 0, 0, 0.9);
 
 
 #temperature {
- font-size: 80px;
-color:rgb(228, 222, 222)
+ font-size: 85px;
+color:rgb(255, 255, 255);
+font-family: 'DINBold',Arial,Verdana,sans-serif;
 }
 
 .weather-temperature {
@@ -174,7 +178,7 @@ margin-top: -7px;
 }
 
 #current-city-btn:hover {
-color: whitesmoke;
+color: rgb(187, 8, 8);
 transition: all 200ms ease-in-out;
 border: none;
 background: transparent;

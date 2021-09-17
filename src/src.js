@@ -173,7 +173,7 @@ function showTemperature(response) {
   let currentCity = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
  
-  currentCity.innerHTML = ("earth")+response.data.name
+  currentCity.innerHTML = response.data.name
 
 
   temperatureElement.innerHTML = temperature;
