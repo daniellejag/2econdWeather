@@ -126,6 +126,8 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "b3a8312e8813d91f8ac0edd65adaa9c3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -147,7 +149,7 @@ function displayCelsiusTemperature(event) {
 }
 
 function displayFahrenheitTemperature(event) {
- 
+ event.preventDefault();
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
