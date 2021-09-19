@@ -102,10 +102,11 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  
+
 
   fahrenheitTemperature = response.data.main.temp;
 
+  
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -118,6 +119,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
  
+  
   getForecast(response.data.coord);
 }
 
@@ -134,7 +136,9 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
+   let displayPlanet = document.querySelector("#planet");
   search(cityInputElement.value)
+   displayPlanet.innerHTML = ` Earth 📍`;
 }
 
 
@@ -167,6 +171,7 @@ function getLocation(position) {
 }
 
 
+
 let currentLocationButton = document.querySelector("#current-city-btn");
 currentLocationButton.addEventListener("click", getPosition);
 function getPosition(event) {
@@ -177,9 +182,10 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentCity = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
- 
-  currentCity.innerHTML = response.data.name
+  let displayPlanet = document.querySelector("#planet");
 
+  currentCity.innerHTML = response.data.name
+ displayPlanet.innerHTML = ` Earth 📍`;
 
   temperatureElement.innerHTML = temperature;
 }
@@ -200,4 +206,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 
 
-search("Florida");
+search("Barcelona");
