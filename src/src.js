@@ -161,6 +161,8 @@ function getLocation(position) {
   let apiKey = "b3a8312e8813d91f8ac0edd65adaa9c3";
   let unit = "imperial";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=${unit}&appid=${apiKey}`;
+ celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   axios.get(apiURL).then(showTemperature);
 }
 
